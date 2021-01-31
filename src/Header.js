@@ -2,6 +2,8 @@ import React from 'react';
 
 const Header = function () {
 
+    /*
+   //inline styling approach 2
     const headerStyle = {
         textAlign: 'center',
         padding: 20,
@@ -9,6 +11,7 @@ const Header = function () {
         color: '#fff',
         textTransform: 'uppercase'
      };
+     */
 
     return (
         /*
@@ -19,7 +22,7 @@ const Header = function () {
         */
 
         //inline styling Approach 2
-         <div style={headerStyle}>
+         <div className="header">
             Phone Directory
          </div>
     )
