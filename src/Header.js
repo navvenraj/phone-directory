@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = function () {
+const Header = function (props) {
 
     /*
    //inline styling approach 2
@@ -23,7 +23,7 @@ const Header = function () {
 
         //inline styling Approach 2
          <div className="header">
-            Phone Directory
+            {props.heading}
          </div>
     )
 }
