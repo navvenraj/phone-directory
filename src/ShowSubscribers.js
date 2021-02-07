@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import Header from './Header.js';
 import './Header.css';
-import './App.css';
+import './ShowSubscribers.css';
 
 
 /*
@@ -24,14 +24,8 @@ commented because subcribers are going to passed via state.
     }
   ]
   */
- class App extends Component{
+ class ShowSubscribers extends Component{
 
-  constructor(){
-    super();
-    this.state = {
-      subscribersListToShow: []
-    }
-  }
 
   render(){
     return (
@@ -47,7 +41,7 @@ commented because subcribers are going to passed via state.
           </div>
   
           {
-            this.state.subscribersListToShow.map(sub =>{
+            this.props.subscribersList.map(sub =>{
               return <div key={sub.id} className="grid-container">
               <span className="grid-item">{sub.name}</span>
               <span className="grid-item">{sub.phone}</span>
@@ -67,4 +61,4 @@ commented because subcribers are going to passed via state.
   
 }
 
-export default App;
+export default ShowSubscribers;
